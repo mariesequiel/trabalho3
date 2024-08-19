@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Salas - Bloco 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Monitoramento de Salas - Bloco 3</h1>
+    </header>
+    <main>
+        <div class="room-container">
+            <div class="room" data-status="livre">
+                <h2>Sala de Aula 1</h2>
+                <p>Status: Livre</p>
+                <div class="controls">
+                    <button onclick="changeStatus(this, 'livre')">Livre</button>
+                    <button onclick="changeStatus(this, 'ocupado')">Ocupado</button>
+                    <button onclick="changeStatus(this, 'manutencao')">Manutenção</button>
+                </div>
+            </div>
+            <div class="room" data-status="ocupado">
+                <h2>Sala de Aula 2</h2>
+                <p>Status: Ocupado</p>
+                <div class="controls">
+                    <button onclick="changeStatus(this, 'livre')">Livre</button>
+                    <button onclick="changeStatus(this, 'ocupado')">Ocupado</button>
+                    <button onclick="changeStatus(this, 'manutencao')">Manutenção</button>
+                </div>
+            </div>
+            <div class="room" data-status="manutencao">
+                <h2>Laboratório de Informática 1</h2>
+                <p>Status: Manutenção</p>
+                <div class="controls">
+                    <button onclick="changeStatus(this, 'livre')">Livre</button>
+                    <button onclick="changeStatus(this, 'ocupado')">Ocupado</button>
+                    <button onclick="changeStatus(this, 'manutencao')">Manutenção</button>
+                </div>
+            </div>
+            <div class="room" data-status="livre">
+                <h2>Laboratório de Informática 2</h2>
+                <p>Status: Livre</p>
+                <div class="controls">
+                    <button onclick="changeStatus(this, 'livre')">Livre</button>
+                    <button onclick="changeStatus(this, 'ocupado')">Ocupado</button>
+                    <button onclick="changeStatus(this, 'manutencao')">Manutenção</button>
+                </div>
+            </div>
+            <div class="room" data-status="ocupado">
+                <h2>Sala de Professores</h2>
+                <p>Status: Ocupado</p>
+                <div class="controls">
+                    <button onclick="changeStatus(this, 'livre')">Livre</button>
+                    <button onclick="changeStatus(this, 'ocupado')">Ocupado</button>
+                    <button onclick="changeStatus(this, 'manutencao')">Manutenção</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>IFCE - Campus Maracanaú | Bloco 3</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
